@@ -1,2 +1,2 @@
-# MaksimMazurin.gitnub.io
+# Максим Мазурин
 Мой первый сайт 
