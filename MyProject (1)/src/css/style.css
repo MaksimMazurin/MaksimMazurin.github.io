@@ -1,0 +1,194 @@
+body{
+	font-family: Arial, Verdana, Helvetica, sans-serif;  /*Задаем шрифт*/
+}
+/*--------------------Шапка страницы----------------*/
+
+nav{
+ 
+		width: 100%;	
+		height: 60px;		
+		background: #2a3e51;  /*Цвет*/
+		position: fixed; /*Прикрепляет меню */
+ }
+
+ menu a{
+	text-decoration-color:blue ;
+}
+
+.logo{		
+	color: #fff;  /*Цвет текста "Максим Мазурин"*/			
+	font-size: 28px;  /*Размер текста "Максим Мазурин"*/
+	line-height: 60px;  /*Сравниваем текст с меню по центру "Максим Мазурин"*/
+	padding-left: 250px;  /*Отступ текста "Максим Мазурин"*/
+	margin-right: 140px;
+	float: left;
+	}
+
+
+.menu a{
+	float: left;
+	color: #fff;
+}
+
+
+.menu li{
+	margin-left: 30px;
+	float: left;  /*Правило обтекаемости*/
+	line-height: 60px;  /*Выравниваем текст меню*/
+	color: #fff;  /*Цвет текста*/
+	margin-right: 10px;  /*Отступы текста*/
+	font-size: 15px;  /*Размер текста*/
+	text-transform: uppercase;  /*Текст заглавными*/
+}
+/*--------------------Шапка страницы----------------*/
+
+/*---------------Привет Я Максим Мазурин----------------*/
+
+.main{		/*box2*/
+	
+	
+	width:100%;		/*Ширина*/	    
+	height: 100%;		/*Высота*/  
+	background: url("../img/парень.png") 90% 100%/auto 85% no-repeat , url("../img/фон1.jpg") center/cover no-repeat;
+}
+.title_container{
+	float: left;
+	margin-top: 190px;
+	margin-left: 220px;
+	color: #2c384a; 
+	text-align: center;
+}
+.title_container h1{
+	font-size: 60px;
+	font-weight: bold;
+}
+.title_container h4{
+	margin-top: 60px;
+	font-size: 30px;	/*размер*/
+	color: #79818d;
+}
+.title_container input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #6d7682;
+	padding: 0px 16px;
+	margin-top: 58px;
+	margin: 50px 14px 0px 14px;
+	}
+/*---------------Привет Я Максим Мазурин----------------*/
+
+/*---------------Обо мне-----------------------------*/
+
+.box{
+	
+	max-width: 100%;	
+	height: 1000px;		
+}
+.about_me h2{
+	margin-left: 50%;
+	margin-top:100px ;
+	font-size: 25px;
+	color: #2c484a;
+	font-weight: bold;
+}
+img{
+	margin-left: 52%;
+	margin-top: 20px;
+
+}
+
+.ava img{
+	margin-top: 80px;
+	margin-left: 47%;
+}
+
+.text p{
+	font-size: 20px;
+	text-align:left;
+	color: #2c384a; 
+	margin-top: 20px;
+	margin-left: 400px;
+	margin-right: 90px;
+	word-spacing: -2px;
+	line-height: normal;
+}
+
+.dowaland{
+	margin-left: 1%;
+}
+
+.dowaland button{
+	border: 2px solid #6d7682;
+	border-radius: 7px;		/* закругление*/
+	color: #6d7682;
+	width: 150px;
+	padding: 10px 10px 10px 15px;;
+	margin-top: 40px;
+	margin-left: 51%;
+	background: url(../img/иконка.jpg) left no-repeat;
+	font-size: 15px;
+}
+/*---------------Обо мне-----------------------------*/
+
+/*---------------Что я умею-----------------------------*/
+
+.skisl{
+
+	max-width: 100%;	
+	height: 1000px;
+	margin-top: 300px;
+	background: url(../img/фон2.jpg) center no-repeat;
+	background-size:cover ;
+
+	}
+
+.am h2{
+	margin-left: 50%;
+	margin-top:200px ;
+	font-size: 25px;
+	color: #2c484a;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.am img{
+	margin-left: 52%;
+	margin-top: 20px;
+	
+}
+
+}
+.amskils li{
+	margin-left: 200px;
+	margin-top: 100px;
+	float: left;  /*Правило обтекаемости*/
+	margin-right: 2px;  /*Отступы текста*/
+	font-size: 20px;  /*Размер текста*/
+
+}
+.amskils a{
+color: orange;
+font-size: 20px;
+float: left;
+line-height: 50px;
+margin-left: 175px;
+
+}
+
+.img img{
+	margin-top: 200px;
+	margin-left: 215px;
+	margin-right: 20px;  /*Отступы текста*/
+}
+.text_amskils span{
+
+margin-left: 200px;
+	margin-top: 10px;
+	float: left;
+	
+	margin-right: 2px;  /*Отступы текста*/
+	font-size: 15px;  /*Размер текста*/
+}
+/*---------------Что я умею-----------------------------*/
