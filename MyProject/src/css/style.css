@@ -1,12 +1,36 @@
+/*	Навигация по стилям	*/
+/*1 Шапка страницы  */
+/*2 Привет Я Максим Мазурин  */
+/*3 Обо мне  */
+/*4 Что я умею  */
+/*5 Кейсы	*/
+/*6 Расчет стоимости*/
+/*7 Немного статистики*/
+/*8 Отзывы	*/
+/*9 подвал	*/
+/*10 Мои контакты  */
+/*11 Карта	*/
+/*12 end	*/
 body{
+
 	font-family: Arial, Verdana, Helvetica, sans-serif;  /*Задаем шрифт*/
 }
+/*--------------------Шапка страницы----------------*/
+
 nav{
-		width: 100%;  /*Ширина*/
-		height: 60px;  /*Высота*/
-		background: #2a3e51;  /*Цвет*/
+
+	width: 100%;	
+	height: 60px;		
+	background: #2a3e51;  /*Цвет*/
+	position: fixed; /*Прикрепляет меню */
+	z-index: 3 ;
+ }
+
+ menu a{
+
+	text-decoration-color:blue ;
 }
-/*box2*/
+
 .logo{		
 	color: #fff;  /*Цвет текста "Максим Мазурин"*/			
 	font-size: 28px;  /*Размер текста "Максим Мазурин"*/
@@ -16,11 +40,15 @@ nav{
 	float: left;
 	}
 
-.menu{
+
+.menu a{
 	float: left;
-	padding-left: 432;
+	color: #fff;
 }
+
+
 .menu li{
+
 	margin-left: 30px;
 	float: left;  /*Правило обтекаемости*/
 	line-height: 60px;  /*Выравниваем текст меню*/
@@ -29,33 +57,38 @@ nav{
 	font-size: 15px;  /*Размер текста*/
 	text-transform: uppercase;  /*Текст заглавными*/
 }
-.box2{
-	width: 100%;  /*Ширина*/
-	height: 1020px;  /*Высота*/		
-}
-.box2{
-	width: 100%;
-	height:100%;		/*Высота*/
-	height: calc(100% - 60px);  /*Высота расчет калькулятором*/
-	background: url("../img/парень.png") 90% 100%/auto 85% no-repeat , url("../img/фон1.jpg") center/cover no-repeat;
+/*--------------------Шапка страницы----------------*/
+
+
+/*---------------Привет Я Максим Мазурин----------------*/
+
+.main{		/*box2*/	
+	
+	width:100%;		/*Ширина*/	    
+	height: 100%;		/*Высота*/  
+	background: url("../img/boy.png") 90% 100%/auto 85% no-repeat , url("../img/background1.jpg") center/cover no-repeat;
 }
 .title_container{
+
 	float: left;
-	margin-top: 150px;
-	margin-left: 300px;
-	color: #2c384a;
+	margin-top: 190px;
+	margin-left: 220px;
+	color: #2c384a; 
+	text-align: center;
 }
 .title_container h1{
-	text-align: center;
-	font-size: 55px;
+
+	font-size: 60px;
 	font-weight: bold;
 }
 .title_container h4{
-	margin-top: 40px;
-	font-size: 22px;/*размер*/
+
+	margin-top: 60px;
+	font-size: 30px;	/*размер*/
 	color: #79818d;
 }
 .title_container input{
+
 	height: 40px;
 	text-align: center;
 	border: 2px solid #6d7682;
@@ -64,114 +97,503 @@ nav{
 	color: #6d7682;
 	padding: 0px 16px;
 	margin-top: 58px;
-	margin: 50px 14px 0px 14px;
-}
-/*box2*/
-
-/*box3*/
-	.box3 {
-	width: 100%;  /*Ширина*/
-	height: 720px;  /*Высота*/
+	margin: 50px 14px 0px 14px;		/*высота-расстояние между блоков*/
 	}
+/*---------------Привет Я Максим Мазурин----------------*/
+
+/*---------------Обо мне-----------------------------*/
+
+.about_me {
+
+	height: 560px;
+	width: 100%;
+	text-align: center;
+	padding: 40px ;
+}
+
 .about_me h2{
+
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #2c384a;
-	margin-left: 600px;
-	margin-top: 80px;
 }
-.avatar{
-	display:flex;
-	background: url("../img/аватарка.png") no-repeat;
-	height: 100%;/*сделал изображение полным*/
-	margin-top: 80px ;
-	margin-left: 580px;
-	float: left;
-}
-.text p{
-	margin: 2px 0px 0px 1px;
-	padding-bottom: 1px;
-	padding-top: 220px;
-	line-height: normal;/*межстрочный интервал*/
-	text-align: justify;/*Текст по ширине*/
+
+.about_me img{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+	}
+
+.about_me p{
+
+	text-align: left;
+	padding-left: 400px;
+	padding-top: 30px;
 	font-size: 20px;
-	color:#2c384a ;
+	color: #2c384a;
+}
+
+.about_me button{
+
+	height: 40px;
+	width: 130px;
+	border: 2px solid #6d7682;		/*обводка рамки толищна, рамка, цвет*/
+	background: none;
+	border-radius: 5px;		/* закругление*/
+	color: #6d7682;
+	padding: 10px 10px 10px 15px;;
+	margin-top: 60px;
+	background: url(../img/иконка.jpg) left no-repeat;
+}
+/*---------------Обо мне-----------------------------*/
+
+/*---------------Что я умею-----------------------------*/
+.my_skills{
+
+	height: 700px;
+	width: 100%;
+	background: url("../img/background2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.my_skills h2{
+
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #2c484a;
+	padding-top: 120px;
 
 }
 
-.
+.my_skills img{
 
-/*box3*/
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.my_skills_img img{
 
-/*box4*/
+display: inline-block;
+margin-top: 70px;
+margin-left: 340px;
 
+}
 
+.my_skills li{
 
-	.box4 {
-	width: 100%;  /*Ширина*/
-	height: 100px;  /*Высота*/
-	background: #3ed627;  /*Цвет*/
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 255px;
+}
+.my_skills a{
+
+	font-size: 25px;
+	color: #ea9422;
+}
+.my_skills span{
+
+	display: inline-block;
+	text-align: left;
+	padding-left: 65px;
+	padding-top: 20px;
+	font-size: 25px;
+	color: #2c384a;
+	}
+	/*---------------Что я умею-----------------------------*/
+
+	/*---------------Кейсы-----------------------------*/
+.case{
+
+	height: 1000px;
+	width: 100%;
+	padding-top: 10px;
+}
+.case h2{
+
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #2c484a;
+
+}
+.case img{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.case p{
+
+	text-align: center;
+	padding-top: 60px;
+	font-size: 20px;
+	color: #2c384a;
+}
+.text_client h2{
+
+	padding-left: ;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #2c484a;
+	padding-top:20px ;
+}
+	.text_client p{
+
+	padding-left: ;
+	text-transform: uppercase;
+	color: #2c484a;
+	font-size: 15px;
+	padding-top: 10px ;
 	}
 
+.text_client input{
+
+	border: 2px solid #208b82;
+	border-width: 20px;
+	color: #fff;
+	background-color:#208b82;
+	border-radius: 3px;
+	margin-top: 20px;
+}
+
+
+.text_project h2{
+
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #2c484a;
+	padding-top: 15px;
+}
+.text_project span{
+
+	font-size: 15px;
+	color: #2c484a;
+	padding-top: 10px;
+
+}
+
+.text_client{
+
+	z-index: 0;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 500px;
+	top: 3100px;
+	margin: -100px 0 0 -150px;
+}
+.text_project{
+
+	z-index: 0;
+	position: absolute;
+	width: 320px;
+	left: 500px;
+	top: 50%;
+	margin: -100px 0 0 -150px;
+	padding-top: 15px;
+}
+/*---------------Кейсы-----------------------------*/
+
+/*---------------Расчет стоимости-------------------------*/
+.cost_calculation {
+
+	height: 720px;
+	width: 100%;
+}
+.cost_calculation_name h2{
+
+	font-weight: bold;
+	padding-top: 150px;
+	text-align:center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #2c484a;
+}
+
+.calculation h2{
+
+	font-weight: bold;
+	padding-left: 20%;
+	padding-top: 50px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #2c484a;
+}
+.calculation select{
+
+	margin-left: 20%;
+	margin-top: 20px;
+	border: 3px solid #eae6e2;
+	border-radius: 4px;
+	background-color: #eae6e2;
+	width: 50%;
+	height: 40px;
+	color: #717171;
+}
+.check{
+
+	padding-left:0%;
+	padding-top: 10px;
+	width: 100%;
+	height: 250px;
+	border-top:3 px solid gray;
+}
+.check h2{
+
+	font-weight: bold;
+	font-size: 20px;
+	color: #2c484a;
+	
+
+}
+.check p{
+
+	padding-top: 5px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/*---------------Расчет стоимости-------------------------*/
+
+/*---------------Немного статистики-------------------------*/
+.static{
+
+	width: 100%;
+	height: 500px;
+	background: url("../img/background4.jpg") no-repeat;
+	background-size: 100% ;
+
+}
+
+.static h2{
+
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #2c484a;
+	padding-top: 25px;
+
+}
+
+.static img{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.static_img img{
+
+	display: inline-block;
+	margin-top: 70px;
+	margin-left: 340px;
+}
+.static_img h2{
+
+	display: inline-block;
+	padding-left: 343px;
+	padding-top: 20px;	
+	font-size: 30px;
+	font-weight: bold;
+}
+.static_img p{
+
+	display: inline-block;
+	padding-top: 20px ;
+	padding-left: 250px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #2c484a;
+
+}
+
+/*---------------Немного статистики-------------------------*/
 
 
 
+/*---------------Отзывы-------------------------*/
+.reviews {
 
-/*box4*/
+	height: 540px;
+	width: 100%;
+	text-align: center;
+	padding: 40px ;
+}
 
+.reviews h2{
 
-	.box5 {
-	width: 100%;  /*Ширина*/
-	height: 100px;  /*Высота*/
-	background: #e6f72a;  /*Цвет*/
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #2c384a;
+}
+
+.reviews img{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
 	}
-	.box6 {
-	width: 100%;  /*Ширина*/
-	height: 100px;  /*Высота*/
-	background: #6d32ed;  /*Цвет*/
+
+.reviews span{
+
+	text-align: left;
+	padding-left: 220px;
+	padding-top: 200px;
+	font-size: 15px;
+	color: #2c384a;
+	text-transform: uppercase;
+}
+.reviews b{
+
+	color: #2c384a;
+	font-size: 15px;
+
+}
+.reviews input{
+
+	margin-top: 40px;
+
 	}
-	.box7 {
-	width: 100%;  /*Ширина*/
-	height: 100px;  /*Высота*/
-	background: #3ed627;  /*Цвет*/
-	}	
-	.box8 {
-	width: 100%;  /*Ширина*/
-	height: 100px;  /*Высота*/
-	background: #e6f72a;  /*Цвет*/
-	}	.box9 {
-	width: 100%;  /*Ширина*/
-	height: 100px;  /*Высота*/
-	background: #6d32ed;  /*Цвет*/
-	}
-	.box10 {
-	width: 100%;  /*Ширина*/
-	height: 100px;  /*Высота*/
-	background: #3ed627;  /*Цвет*/
-	}	
-	.box11 {
-	width: 100%;  /*Ширина*/
-	height: 100px;  /*Высота*/
-	background: #e6f72a;  /*Цвет*/
-	}	
-	.box12 {
-	width: 100%px;  /*Ширина*/
-	height: 100px;  /*Высота*/
-	background: #6d32ed;  /*Цвет*/
-	}
-	     
+/*---------------Отзывы-------------------------*/
 
+/*-----------------------подвал--------------------------------*/
+footer{
 
+	height: 1100px;
+	width: 100%;
+}
+/*---------------Мои контакты-------------------------*/
+.my_contact{
 
+	height: 750px;
+	width: 100%;
+	background: url("../img/background5.jpg") no-repeat;
+	background-size: 100%;
+	background-position: top;
 
+}
 
+.my_contact h2{
 
+	font-weight: bold;
+	padding-top: 70px;
+	text-align:center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
 
-	     /*padding-top: 400px;
-	padding-right: 10%;
-	margin-top: 0.5px;
-	margin-bottom: 1px;
-	line-height: normal;/*межстрочный интервал*/
-	/*text-align: justify;/*Текст по ширине*/
-	/*font-size: 20px;*/
-	/*color:#2c384a ;*/
+}
+.my_contact img{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.my_contact span{
+
+	text-align: center;
+	padding-left: 640px;
+	padding-top: 150px;
+	font-size: 15px;
+	color: #fff;
+}
+.my_contact_connection img{	
+
+	display: inline-block;
+	margin-top: 70px;
+	margin-left: 470px;
+
+}
+.my_contact_connection p{
+
+	display: inline-block;
+	padding-top: 0px ;
+	padding-left: 320px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #2c484a;
+}
+.my_contact_connection a{
+
+	font-size: 20px;
+	color: #fff;
+}
+
+.my_contact_message input{
+
+	position: relative;
+	top: 15px;
+	left: 500px;
+	margin-top: 15px;
+	margin-left: 150px;
+	border: 1px solid #d5d5d5;
+	border-width: 10px;
+	color: black;
+	background-color:#d5d5d5;
+	border-radius: 3px;
+
+}
+
+.my_contact_message textarea{
+
+	position: relative;
+	border-radius: 3px;
+	margin-left: 500px;
+	margin-top: 30px;
+	width: 800px;
+	height: 150px;
+	background-color: #d5d5d5;
+}
+
+.my_contact_message button{
+
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+/*---------------Мои контакты-------------------------*/
+
+/*---------------Карта-------------------------*/
+
+.maps{
+
+	height:450px;
+	width: 100%;
+	border-radius: 3px;
+}
+
+.maps iframe{
+	height: 100%;
+	width: 100%;
+}
+
+/*---------------Карта-------------------------*/
+
+/*---------------end-------------------------*/
+.end{
+
+	width: 100%;
+	height: 200px;
+	background-color:#2a3e51 ;
+}
+
+.end p{
+
+	padding-top: 150px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+
+/*---------------end-------------------------*/
+/*-----------------------подвал--------------------------------*/
