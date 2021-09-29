@@ -1,133 +1,256 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
+<!DOCTYPE html> <!--ФОРМАТ САЙТА-->
+
+<html lang="en"> <!--ЯЗЫК НА САЙТЕ-->
+
+<head> <!--ГОЛОВА САЙТА-->
+	
+	<meta charset="UTF-8"> <!--КОДИРОВКА САЙТА-->
 	<meta name="author" content="Максим">
 	<meta name="keywords" content="Сайт визитка разработчика">
 	<meta name="robots" content="all">
 	<meta property="og:title" content="Это моя первая сайт визитка">
-	<title>Мазурин Максим Веб-разработчик</title>
-</head>
-<body>
-	<header>
-		<nav>
-			<div class="logo">Максим Мазурин</div>
+		<title>Мазурин Максим Веб-разработчик</title> <!--ИМЯ САЙТА-->
+	<link rel="stylesheet" href="css/reset.css"> <!--Сброс стандартов стилей-->
+	<link rel="stylesheet" href="css/style.css"> <!--Стили сайта-->
+	<link rel="stylesheet" href="css/animation.css"> <!--Анимация-->
+	<link rel="icon" type="img/png" href="img/logo.png"><!--Установка иконки сайта-->		
+</head> <!--ГОЛОВА САЙТА-->
+
+<!--------------------Шапка страницы------------------------>
+<body> <!--ТЕЛО САЙТА-->	
+<header>	<!--Шапка сайта-->
+
+		<nav><!--Меню сайта-->
+			<div class="logo"><a href="#">Максим Мазурин</a></div>
 			<div class="menu"><ul>
-				<li>Обо мне</li>
-				<li>Услуги</li>
-				<li>Кейсы</li>
-				<li>Прайс</li>
-				<li>Отзывы</li>
-				<li>Контакты</li>
+				<li><a href="#about_me">Обо мне</a></li>																																				
+				<li><a href="#my_skills">Услуги</a></li>
+				<li><a href="#case">Кейсы</a></li>
+				<li><a href="#cost_calculation">Прайс</a></li>
+				<li><a href="#reviews">Отзывы</a></li>
+				<li><a href="#my_contact">Контакты</a></li>
+				<li><p><a href="#">Оставить сообщение</a></p></li>
 			</div>
-		</nav>
-	</header><!-- /header -->
-	<div class="main"><div class="title__container">
-		<h1>Привет<br>Я Максим Мазурин</h1>
-		<h4>Фулл стек веб-разработчик</h4>
-		<input type="submit" value="Обо мне">
-		<input type="submit" value="Мои работы">
+		</div>
+		</nav><!--Меню сайта-->
+</header><!--Шапка сайта-->	
+<!--------------------Шапка страницы------------------------>
+
+
+<!--------------------Загрузка сайта------------------------>
+
+<div class="cssload-container">
+	<div class="cssload-circle"></div>
+	<div class="cssload-circle"></div>
+</div>
+
+<!--------------------Загрузка сайта------------------------>
+
+<!--------------------Шапка страницы------------------------>
+
+
+
+<!-----------Привет Я Максим Мазурин------------------------>	
+
+	
+		<div class="main">
+		<div class="title_container">
+			<h1>Привет<br>Я Максим Мазурин</h1>
+			<h4>Фулл стек веб-разработчик и Android-разработчик</h4><ul>
+			<input type="button" value="Обо мне">
+			<input type="button" value="Мои работы">
+		</div>
 	</div>
-			
-	<div class="subtitle" class="about_me__container"><!--Контейнер Обо мне-->
-		<h2>ОБО МНЕ</h2>
-		</div>
-		
-		<div class="text" class="about_me__container"><!--Контейнер Обо мне-->
-		<span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante<br>facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante<br>facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-		</span>
-		<a href="#" download=""><!--Кнопка Скачать резюме-->
-		<input type="submit" value="Скачать резюме">
-		</a>
-		</div>
-		
-		<div class="subtitle" class="What I_can_do__container"><!-- Контейнер Что я умею-->
-		<h2>ЧТО Я УМЕЮ</h2>
-		</div>
-		<a href="url"><br>Веб-Дизайн</a>
-		<span><br>lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque etiam.</span>
-		
-		<a href="url"><br>Разработка</a>
-		<span><br>lorem ipsum dolor sit amet placerat<br>facilisis mi in tempus eleifend<br>pellentesque.</span>
-		
-		<a href="url"><br>CEO-Оптимизация</a>
-		<span><br>lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque etiam.</span>
-		
-		<a href="url"><br>Маркетинг</a>
-		<span><br>lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque etiam.</span>
-		
-		<div class="subtitle" class="cases__container"><!-- Контейнер кейсы-->
-		<h2>Кейсы</h2>
-		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis. </span>
-		<span><h2>CLIENT:</h2><br>Какая-то компания</span>
-		<span><h2>WEBSITE:</h2><br>http://www.somedomain.com</span>
-		<span><h2>Название проекта</h2><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.,sed do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br></span>
-		
-		<input type="button" name="VISIT LIVE SITE" value="VISIT LIVE SITE">
-		
-		<div class="subtitle" class="cost__calculation__container"><!-- Контейнер расчет стоимости-->
-		<h2>Расчёт стоимости</h2>
-		
+
+	<!----------------Обо мне--------------------------------->
+		<div class="about_me">
+			<a name="about_me"></a><!--Ссылка-->
+			<h2>ОБО МНЕ</h2>
+				<img src="img/header_line.jpg" alt="альтернативный текст">
+				<img src="img/avatar1.png" alt="альтернативный текст">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh antefacilisis bibendum dolor feugiat at.Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh antefacilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+					<a href="#" download="">
+			<button>Скачать резюме</button>	
+</a>
+	</div>
+	<!----------------Обо мне--------------------------------->
+
+	<!----------------Что я умею--------------------------------->
+		<div class="my_skills">
+			<a name="my_skills"></a><!--Ссылка-->
+					<h2>Что я умею</h2>
+			<img src="img/header_line.jpg">
+		<div class="my_skills_img">
+			<img src="img/notebook.png" alt="ноут">
+			<img src="img/sign.png" alt="знак">
+			<img src="img/rockets.png" alt="ракета">
+			<img src="img/gramophone.png" alt="громмофон">
+
+		<ul>
+			<li><a href="#">Веб-дизайн</a></li>
+			<li><a href="#">Разработка</a></li>				
+			<li><a href="#">CEO-Оптимизация</a></li>				
+			<li><a href="#">Маркетинг</a></li>
+		</ul>
+				<span><br>lorem ipsum dolor sit amet placerat<br>facilisis mi in tempus eleifend<br>pellentesque.</span>
+				<span><br>lorem ipsum dolor sit amet placerat<br>facilisis mi in tempus eleifend<br>pellentesque.</span>
+				<span><br>lorem ipsum dolor sit amet placerat<br>facilisis mi in tempus eleifend<br>pellentesque.</span>
+				<span><br>lorem ipsum dolor sit amet placerat<br>facilisis mi in tempus eleifend<br>pellentesque.</span>
+</div>
+</div>
+</div>																																				
+	<!----------------Что я умею--------------------------------->
+
+	<!----------------Кейсы--------------------------------->
+	<div class="case">
+		<a name="case"></a><!--Ссылка-->
+			<h2>Кейсы</h2>
+				<img src="img/header_line.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+				<img src="img/background3.jpg">
+</div>
+
+	<div class="text_client">
+		<h2>client:</h2>
+			<p>Какая-то компания</p>
+			<h2>website:</h2>
+			<p>http://www.somedomain.ccm</p>
+	<input type="button" name="VISIT LIVE SITE" value="VISIT LIVE SITE">
+
+	<div class="text_project">
+		<h2>Название проекта</h2>
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.,sed do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+	</div>
+	</div>
+	</div>	
+
+
+	<!----------------Кейсы--------------------------------->
+
+	<!----------------Расчёт стоимости--------------------------------->
+	<div class="cost_calculation">
+	<div class="cost_calculation_name">
+		<a name="cost_calculation"></a><!--Ссылка-->
+			<h2>Расчёт стоимости</h2>
+</div>
+
+	<div class="calculation">
+
 		<form action="#" name="form1">
-		<p><h2>ТИП САЙТА</h2></p>
- <p><select name="list1" id="list">
-  <option>Выберите пункт...</option>
-  <option value="opt1">Пункт1</option>
-  <option value="Opt2">Пункт2</option>
-  <option value="opt3">Пункт3</option>
- </select></p>
+			<h2>ТИП САЙТА</h2>
+		<select name="list1" id="list">
+  			<option>Выберите пункт...</option>
+  			<option value="opt1">Пункт1</option>
+  			<option value="opt2">Пункт2</option>
+  			<option value="opt3">Пункт3</option>
+ </select>
  
  <form action="formdata" method="post" name="form2">
-		<p><h2>ДИЗАЙН</h2></p>
- <p><select name="list1" id="list">
-  <option>Выберите пункт...</option>
-  <option value="opt1">Пункт1</option>
-  <option value="Opt2">Пункт2</option>
-  <option value="opt3">Пункт3</option>
- </select></p>
+			<h2>ДИЗАЙН</h2>
+ 		<select name="list1" id="list">
+  			<option>Выберите пункт...</option>
+  			<option value="opt1">Пункт1</option>
+  			<option value="opt2">Пункт2</option>
+  			<option value="opt3">Пункт3</option>
+ </select>
 
 <form action="formdata" method="post" name="form3">
-		<p><h2>АДАПТИВНОСТЬ</h2></p>
- <p><select name="list1" id="list">
-  <option>Выберите пункт...</option>
-  <option value="opt1">Пункт1</option>
-  <option value="Opt2">Пункт2</option>
-  <option value="opt3">Пункт3</option>
- </select></p>
- 
-<span>Сроки 0<br> Стоимость 0</span>
- 
-		<div class="subtitle" class="statistics__container"><!--Контейнер Немного статистики-->
+			<h2>АДАПТИВНОСТЬ</h2>
+ 		<select name="list1" id="list">
+  			<option>Выберите пункт...</option>
+  			<option value="opt1">Пункт1</option>
+  			<option value="opt2">Пункт2</option>
+  			<option value="opt3">Пункт3</option>
+ </select>
+</form>
+ 		<div class="check">
+ 			<h2>Сроки<p>0</p></h2>
+ 			<h2>Стоимости<p>0</p></h2>
+ </div>
+</div>																																							
+<!----------------Расчёт стоимости--------------------------------->
+
+<!----------------Статистика--------------------------------->
+	<div class="static">
 		<h2>НЕМНОГО СТАТИСТИКИ</h2>
-		<span>120<br>СЧАСТЛИВЫХ КЛИЕНТОВ <br>4,600<br> ЧАСОВ РАБОТЫ<br>340<br> ПРОЕКТОВ ЗАВЕРШЕНО <br>23<br> НАГРАД ПОЛУЧЕНО</span>
-		
-		<div class="subtitle" class="reviews__container"><!--Контейнер отзывы-->
-		<h2>ОТЗЫВЫ</h2>
-		
-		<span><p>Lorem ipsum dolor sit amet, consectetur adipiscinhg elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante<br>facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p><br><b><p>Михаил,</b>Ген директор ПАО"Газпром".</p><br></span>
-		<input type="radio" name="text_input1" >
-		<input type="radio" name="text_input1" >
-		<input type="radio" name="text_input1" >
+		<img src="img/header_line.jpg" alt="альтернативный текст">
+	<div class="static_img">
+		<img src="img/smaile.png" alt="смайл">
+		<img src="img/brackets.png" alt="скобки">
+		<img src="img/check_mark.png" alt="галочка">
+		<img src="img/cup.png" alt="кубок">
+			<h2>120</h2>
+			<h2>4600</h2>
+			<h2>340</h2>
+			<h2>23</h2>
+				<p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+				<p>ЧАСОВ РАБОТЫ</p>
+				<p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+				<p>НАГРАД ПОЛУЧЕНО</p>
+</div>
+<!----------------Статистика--------------------------------->
+</div>
 
-	<footer>
-	<div class="footer" class="footer__container"><!--Подвал-->
-		<h2>МОИ КОНТАКТЫ</h2>
-		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo<br><p>Санкт-Петербург<br>Невский проспект11</p><p>info@companyname.com</p><p>+7 999 999-99-99</span>
-		<h2><p>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h2></p>
-		<form action="#">
-		<input type="name" name="name_input" placeholder="Имя">
-		<input type="" name="name_input" placeholder="Email">
-		<textarea name="name" id="1" cols="30" rows="10" placeholder="Сообщение">
+<!----------------Отзывы--------------------------------->
+
+	<div class="reviews">
+		<a name="reviews"></a><!--Ссылка-->
+			<h2>Отзывы</h2>
+				<img src="img/header_line.jpg" alt="альтернативный текст">
+				<img src="img/avatar2.png" alt="альтернативный текст">
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.Sed commodo nibh antefacilisis bibendum dolor feugiat at.Duis sed dapibus leo nec ornare diam commodo nibh.</span><p><br><b>Михаил</b>,Ген директор ПАО"Газпром".</p>
+			<input type="radio" name="text_input1" >
+		<input type="radio" name="text_input1" >
+	<input type="radio" name="text_input1" >
+</div>
+<!----------------Отзывы--------------------------------->
+
+<!----------------Подвал----------------------->
+
+<!----------------Мои контакты------------------->
+<footer>
+
+<div class="my_contact">
+	<a name="my_contact"></a><!--Ссылка-->
+		<h2>Мои контакты</h2>
+		<img src="img/header_line.jpg">											
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</span>
+<div class="my_contact_connection">
+		<img src="img/гео.png">
+		<img src="img/конверт.png">
+		<img src="img/труба.png">
+			<p><a>Санкт-Петербург<br>Невский проспект11</a></p>
+			<p><a>info@companyname.com</a></p>
+			<p><a>+7 999 999-99-99</a></p>
+<div class="my_contact_message">																					
+	<h2>Оставьте мне сообщение</h2>
+			<form action="#">
+	<input type="name" name="name_input" placeholder="Имя">
+	<input type="" name="name_input" placeholder="Email">
+<textarea name="name" id="1" cols="30" rows="10" placeholder="Сообщение">
 </textarea>
-		<input type="submit" name="Отправить" >
-		<!--Google карта-->
-		<iframe width="600" height="450" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10989.729677347106!2d30.7336159!3d46.4797494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc41cc58027fe9b7!2sInweb!5e0!3m2!1sru!2sua!4v1603444441494!5m2!1sru!2sua" frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false" tabindex="0"></iframe>
+		<button>Отправить</button>
+</div>
+</div>
+</div>
+<!----------------Мои контакты----------------------->
 
-		<span><br>Copyright 2021 Максим Мазурин Design by Web</span>
-	</footer>
-</body>
-</html>
+<!----------------Карта----------------------->
+<div class="maps">
+	<iframe width="600" height="450" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10989.729677347106!2d30.7336159!3d46.4797494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc41cc58027fe9b7!2sInweb!5e0!3m2!1sru!2sua!4v1603444441494!5m2!1sru!2sua" frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<!----------------Карта----------------------->
+</footer>
+<!----------------Подвал----------------------->
 
-
+<!----------------End----------------------->
+	<div class="end">
+		<p>Copyright 2021 Максим Мазурин Design by Web</p>
+			<a name="yakoray"></a>																																									
+	</div>
+<!----------------End----------------------->
+	</div>		
+		</body><!--ТЕЛО САЙТА-->
+			</html>
 
